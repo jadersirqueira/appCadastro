@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tela de Login</title>
+</head>
+
+<body class="min-h-screen bg-slate-100 flex items-center justify-center p-4">
+    <!-- Tela de login -->
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
+        <h2 class="text-2xl font-bold text-slate-800 text-center mb-2">Entrar no Sistema</h2>
+        <form id="loginForm" class="space-y-4" novalidate>
+
+            <div>
+                <label for="nome" class="block text-sm font-medium text-slate-700 mb-1">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu Nome:"
+                    class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600/20">
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha:"
+                    class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600/20">
+            </div>
+
+            <button type="submit"
+                class="w-full rounded-lg bg-blue-600 py-2.5 px-4 text-sm font-semibold text-white hover:bg-blue-700 transition cursor-pointer">
+                Entrar
+            </button>
+
+        </form>
+    </div>
+</body>
+
+</html>
